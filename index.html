@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="src/styles/navigation-bar.css" />
+    <link rel="stylesheet" href="src/styles/main-todo.css" />
+  </head>
+  <body>
+
+    <nav class="navigation-bar">
+      <div class="nav-title-section">
+        <a href="#">
+          <img src="img/todo-logo.png" class="todo-logo">
+        </a>
+        <p class="nav-name">To-Do List</p>
+      </div>
+    </nav>
+    <nav class="side-nav-bar">
+
+    </nav>
+    <div class="main-todo">
+      <div class="todo-input-div">
+        <input type="text" class="todo-name-input js-todo-name-input" placeholder="Write your task" required>
+
+        <textarea class="todo-dis-input js-todo-dis-input" placeholder="Write discription"></textarea>
+
+        <button class="todo-add-btn js-todo-add-btn">Add</button>
+      </div>
+      <div class="todo-list">
+        <div  class="heading-sec">
+          <h1 class="task-heading">
+            Tasks
+          </h1>          
+        </div>
+        <div class="each-task">
+        </div>
+      </div>
+    </div>
+
+    <script src="src/scripts/main.js"></script>
+  </body>
+</html>

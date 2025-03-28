@@ -1,0 +1,139 @@
+.main-todo{
+display: flex;
+justify-content: space-between;
+gap: 10px;
+padding: 70px 20px 0px 220px;
+background-color: rgb(255, 255, 255);
+height: 550px;
+}
+
+/* TASK INPUT SECTION */
+
+.todo-input-div{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  row-gap: 8px;
+  border-radius: 12px;
+  background-color: white;
+  width: 50%;
+  box-shadow: 0 0 5px gray;
+}
+.todo-name-input{
+  border: 0;
+  font-size: 25px;
+  padding: 5px 15px;
+  padding-bottom: 15px;
+  border-bottom: 2px;
+  border-style: solid;
+  border-color: gray;
+  outline: 0;
+}
+.todo-dis-input{
+  border: 0;
+  font-size: 18px;
+  padding: 3px 15px;
+  resize: none;
+  height: 435px;
+  scrollbar-width: none;
+  outline: 0;
+}
+.todo-add-btn{
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  border: 0;
+  padding: 3px 20px;
+  box-shadow: 0 0 2px black;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 25px;
+  background-color: rgb(46, 100, 218);
+  color: white;
+}
+
+/* TASK OUTPUT SECTION */
+
+.todo-list{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 1fr;
+  padding: 20px 20px 10px 40px;
+  row-gap: 8px;
+  border-radius: 12px;
+  box-shadow: 0 0 5px gray;
+
+}
+
+/* Heading Area */
+
+.heading-sec{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.task-heading{
+  display: inline;
+}
+
+/* Task List Area */
+
+.each-task{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  padding: 2px;
+  
+}
+.task-section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 0 0 3px gray;
+  padding: 8px;
+  border-radius: 5px;
+  width: fit-content;
+  box-shadow: 0 0 5px gray;
+
+}
+.todo-checkbox{
+  margin: 0px 5px;
+  cursor: pointer;
+  box-shadow: 0 0 1px rgb(160, 160, 160);
+}
+.todo-task-name{
+  display: inline-block;
+  width: 420px;
+  font-size: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.todo-task-dis{
+  margin-left: 10px;
+  font-size: 16px;
+}
+.todo-delete-btn{
+  border: 0;
+  border-radius: 3px;
+  box-shadow: 0 0 2px black;
+  padding: 2px 8px;
+  color: white;
+  background-color: rgb(253, 57, 57);
+  cursor: pointer;
+}
+.side-nav-bar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  bottom: 0;
+  box-shadow: 0 0 5px gray;
+  background-color: white;
+  z-index: 1;
+}
